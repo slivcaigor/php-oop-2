@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <!-- Cucce -->
     <div class="card">
         <div class="card-body">
             <?php foreach ($prodotti as $prodotto) { ?>
@@ -46,6 +46,27 @@
             <?php } ?>
         </div>
     </div>
+    <!-- Giochi -->
+    <div class="card">
+        <div class="card-body">
+            <?php foreach ($giochi as $gioco) { ?>
+            <!-- <img src="https://picsum.photos/200/300" class="card-img-top"> -->
+            <h5 class="card-title">
+                <?= $gioco->getNome() ?>
+            </h5>
+            <p class="card-text">
+                <?= $gioco->getDescrizione() ?>
+            </p>
+            <p class="card-text">
+                <?= $gioco->getDimensione() ?>
+            </p>
+            <p class="card-text">
+                <?= $gioco->getPrezzo() . ' $' ?>
+            </p>
+            <?php } ?>
+        </div>
+    </div>
+
 </body>
 
 </html>
