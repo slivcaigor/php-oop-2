@@ -18,7 +18,6 @@
     require_once 'Cibo.php';
     require_once 'Gioco.php';
     require_once 'Cucce.php';
-    require_once 'Categoria.php';
     ?>
 </head>
 
@@ -34,6 +33,9 @@
             </h5>
             <p class="card-text">
                 <?= $prodotto->getDescrizione() ?>
+            </p>
+            <p class="card-text">
+                <?= $prodotto->getCategoria() ?>
             </p>
             <p class="card-text">
                 <?= $prodotto->getDimensione() ?>
@@ -60,6 +62,9 @@
                 <?= $gioco->getDescrizione() ?>
             </p>
             <p class="card-text">
+                <?= $prodotto->getCategoria() ?>
+            </p>
+            <p class="card-text">
                 <?= $gioco->getDimensione() ?>
             </p>
             <p class="card-text">
@@ -80,6 +85,9 @@
             </h5>
             <p class="card-text">
                 <?= $cibo->getDescrizione() ?>
+            </p>
+            <p class="card-text">
+                <?= $prodotto->getCategoria() ?>
             </p>
             <p class="card-text">
                 <?= $cibo->getMarca() ?>
