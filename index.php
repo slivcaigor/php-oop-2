@@ -29,22 +29,22 @@
             <?php foreach ($prodotti as $prodotto) { ?>
             <!-- <img src="https://picsum.photos/200/300" class="card-img-top"> -->
             <h5 class="card-title">
-                <?= $prodotto->getNome() ?>
+                <?= $prodotto->nome ?>
             </h5>
             <p class="card-text">
-                <?= $prodotto->getDescrizione() ?>
+                <?= $prodotto->descrizione ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getCategoria() ?>
+                <?= $prodotto->categoria ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getDimensione() ?>
+                <?= $prodotto->dimensione ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getMateriale() ?>
+                <?= $prodotto->materiale ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getPrezzo() . ' $' ?>
+                <?= $prodotto->prezzo . ' $' ?>
             </p>
             <?php } ?>
         </div>
@@ -56,19 +56,19 @@
             <?php foreach ($giochi as $gioco) { ?>
             <!-- <img src="https://picsum.photos/200/300" class="card-img-top"> -->
             <h5 class="card-title">
-                <?= $gioco->getNome() ?>
+                <?= $gioco->nome ?>
             </h5>
             <p class="card-text">
-                <?= $gioco->getDescrizione() ?>
+                <?= $gioco->descrizione ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getCategoria() ?>
+                <?= $prodotto->categoria ?>
             </p>
             <p class="card-text">
-                <?= $gioco->getDimensione() ?>
+                <?= $gioco->dimensione ?>
             </p>
             <p class="card-text">
-                <?= $gioco->getPrezzo() . ' $' ?>
+                <?= $gioco->prezzo . ' $' ?>
             </p>
             <?php } ?>
         </div>
@@ -81,25 +81,25 @@
             <?php foreach ($cibi as $cibo) { ?>
             <!-- <img src="https://picsum.photos/200/300" class="card-img-top"> -->
             <h5 class="card-title">
-                <?= $cibo->getNome() ?>
+                <?= $cibo->nome ?>
             </h5>
             <p class="card-text">
-                <?= $cibo->getDescrizione() ?>
+                <?= $cibo->descrizione ?>
             </p>
             <p class="card-text">
-                <?= $prodotto->getCategoria() ?>
+                <?= $prodotto->prezzo ?>
             </p>
             <p class="card-text">
-                <?= $cibo->getMarca() ?>
+                <?= $cibo->marca ?>
             </p>
             <p class="card-text">
-                <?= $cibo->getEtaAnimale() ?>
+                <?= $cibo->etaAnimale ?>
             </p>
             <p class="card-text">
-                <?= $cibo->getQuantitaConfezione() . ' KG' ?>
+                <?= $cibo->quantitaConfezione . ' KG' ?>
             </p>
             <p class="card-text">
-                <?= $cibo->getPrezzo() . ' $' ?>
+                <?= $cibo->categoria . ' $' ?>
             </p>
             <?php } ?>
         </div>

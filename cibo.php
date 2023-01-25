@@ -12,41 +12,6 @@ class Cibo extends Prodotto
         $this->etaAnimale = $etaAnimale;
         $this->quantitaConfezione = $quantitaConfezione;
     }
-
-    public function getNome(): string
-    {
-        return $this->nome;
-    }
-
-    public function getDescrizione(): string
-    {
-        return $this->descrizione;
-    }
-
-    public function getPrezzo(): string
-    {
-        return $this->prezzo;
-    }
-
-    public function getMarca(): string
-    {
-        return $this->marca;
-    }
-
-    public function getEtaAnimale(): string
-    {
-        return $this->etaAnimale;
-    }
-
-    public function getQuantitaConfezione(): string
-    {
-        return $this->quantitaConfezione;
-    }
-
-    public function getCategoria(): string
-    {
-        return $this->categoria;
-    }
 }
 
 $cibo1 = new Cibo("Optimanova Adult", "All Breeds Salmone e Patate", 70, "Optima", "Adulto", 12, "Cane");
