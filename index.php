@@ -24,6 +24,7 @@
 
 <body>
     <!-- Cucce -->
+    <h1>Cucce</h1>
     <div class="card">
         <div class="card-body">
             <?php foreach ($prodotti as $prodotto) { ?>
@@ -47,6 +48,7 @@
         </div>
     </div>
     <!-- Giochi -->
+    <h1>Giochi</h1>
     <div class="card">
         <div class="card-body">
             <?php foreach ($giochi as $gioco) { ?>
@@ -62,6 +64,34 @@
             </p>
             <p class="card-text">
                 <?= $gioco->getPrezzo() . ' $' ?>
+            </p>
+            <?php } ?>
+        </div>
+    </div>
+
+    <!-- Cibo -->
+    <h1>Cibo</h1>
+    <div class="card">
+        <div class="card-body">
+            <?php foreach ($cibi as $cibo) { ?>
+            <!-- <img src="https://picsum.photos/200/300" class="card-img-top"> -->
+            <h5 class="card-title">
+                <?= $cibo->getNome() ?>
+            </h5>
+            <p class="card-text">
+                <?= $cibo->getDescrizione() ?>
+            </p>
+            <p class="card-text">
+                <?= $cibo->getMarca() ?>
+            </p>
+            <p class="card-text">
+                <?= $cibo->getEtaAnimale() ?>
+            </p>
+            <p class="card-text">
+                <?= $cibo->getQuantitaConfezione() . ' KG' ?>
+            </p>
+            <p class="card-text">
+                <?= $cibo->getPrezzo() . ' $' ?>
             </p>
             <?php } ?>
         </div>
